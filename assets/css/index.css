@@ -35,15 +35,33 @@
     margin: 7px 0;
 }
 
+#settingsPanel .playTest {
+    background-color: #20252b;
+    border-color: #46515f;
+    border-width: 1px;
+    color: #f4f2ee;
+    width: 50%;
+}
+
+#settingsPanel .playTest::before {
+    content: "▶︎";
+    color: #f4f2ee;
+    margin-right: 5px;
+}
+
+#settingsPanel .playTest:hover {
+    background-color: #2a3038;
+    border-color: #687482;
+}
+
 #settingsPanel .resetDefault {
-    background-color: var(--color-tertiary);
-    transition: color 0.2s ease;
+    background-color: #252525;
+    border-color: #3a3a3a;
 }
 
 #settingsPanel .resetDefault:hover {
-    background-color: #888;
-    border-color: #888;
-    color: var(--color-primary);
+    background-color: #303030;
+    border-color: #303030;
 }
 
 #settingsPanel .toneControlValue {

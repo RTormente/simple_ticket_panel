@@ -51,14 +51,15 @@
                 <fieldset>
                     <legend>Bipe:</legend>
                     <label>
-                        Duração do bipe:
+                        Duração:
                         <input type="range" name="inToneDuration" id="inToneDuration" min="50" max="1000" step="50" />
                     </label>
                     <label>
-                        Quantidade de bipes :
+                        Quantidade:
                         <input type="number" name="inToneCount" id="inToneCount" min="1" max="4" />
                     </label>
                     <div id="toneSequenceControls"></div>
+                    <button id="btnTestBipper" type="button" class="playTest">Testar Bipe</button>
                 </fieldset>
 
                 <fieldset>
@@ -79,6 +80,7 @@
                         <span id="inVoicePitchValue" class="toneControlValue"></span>
                         <input type="range" name="inVoicePitch" id="inVoicePitch" min="0" max="2" step="0.1" />
                     </label>
+                    <button id="btnTestVoice" type="button" class="playTest">Testar Voz</button>
                 </fieldset>
 
                 <button class="resetDefault" type="reset" value="Salvar">Restaurar Padrões</button>
