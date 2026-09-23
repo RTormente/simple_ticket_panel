@@ -13,6 +13,8 @@ export default class UI {
             inToneDuration: document.getElementById("inToneDuration"),
             inToneCount: document.getElementById("inToneCount"),
             toneSequenceControls: document.getElementById("toneSequenceControls"),
+            btnTestBipper: document.getElementById("btnTestBipper"),
+            btnTestVoice: document.getElementById("btnTestVoice"),
             formSettingsPanel: document.getElementById("formSettingsPanel"),
             ulInfoShortcuts: document.getElementById("ulInfoShortcuts"),
             shortcutModal: document.getElementById("shortcutModal"),
@@ -243,6 +245,22 @@ export default class UI {
         const unsubscribe = this.#registerListener(this.el.formSettingsPanel, "change", (event) =>
             callback(event.target),
         );
+
+        if (unsubscribe) {
+            this._listeners.push(unsubscribe);
+        }
+    }
+
+    onTestBipper(callback) {
+        const unsubscribe = this.#registerListener(this.el.btnTestBipper, "click", callback);
+
+        if (unsubscribe) {
+            this._listeners.push(unsubscribe);
+        }
+    }
+
+    onTestVoice(callback) {
+        const unsubscribe = this.#registerListener(this.el.btnTestVoice, "click", callback);
 
         if (unsubscribe) {
             this._listeners.push(unsubscribe);

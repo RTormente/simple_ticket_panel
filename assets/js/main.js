@@ -209,6 +209,19 @@ ui.onSettingsChange((target) => {
     }
 });
 
+ui.onTestBipper(() => {
+    beeper.play();
+});
+
+ui.onTestVoice(async () => {
+    if (!speech.canSpeak()) {
+        return;
+    }
+
+    await speech.speakTicket("N", normalTicket.value);
+    await speech.speakTicket("P", preferentialTicket.value);
+});
+
 let activeShortcutAction = null;
 let shortcutCaptureHandler = null;
 
