@@ -64,7 +64,7 @@ http://IP_DO_SERVIDOR:8000
 
 Uma versão publicada do projeto está disponível em:
 
-[https://rtormente.github.io/ticket_panel/](https://rtormente.github.io/simple_ticket_panel/)
+[https://rtormente.github.io/simple_ticket_panel/](https://rtormente.github.io/simple_ticket_panel/)
 
 ## Voz
 
